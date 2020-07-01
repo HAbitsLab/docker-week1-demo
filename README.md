@@ -88,3 +88,5 @@ RUN
 > Docker github has some great resources to learn more 
 
 > [DOCKER LABS](https://github.com/docker/labs/blob/master/beginner/chapters/alpine.md)
+
+This is a sample change
