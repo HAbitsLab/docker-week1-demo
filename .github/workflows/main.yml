@@ -39,9 +39,9 @@ jobs:
             cd docker-week1-demo
             
             echo Build image
-            docker build -t flask-sample:latest .
+            sudo docker build -t flask-sample:latest .
             
             echo Run Container          
-            docker run -d -p 5000:5000 flask-sample
+            sudo docker run -d -p 5000:5000 flask-sample
           
         
