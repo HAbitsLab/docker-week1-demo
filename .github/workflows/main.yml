@@ -33,6 +33,15 @@ jobs:
           USERNAME: ${{ secrets.SSH_USERNAME }}
           KEY: ${{ secrets.SSH_KEY }}
           script: |
-            touch text.txt
+            echo Clone Repo
+            git clone https://github.com/HAbitsLab/docker-week1-demo.git
+            
+            cd docker-week1-demo
+            
+            echo Build image
+            docker build -t flask-sample:latest .
+            
+            echo Run Container          
+            docker run -d -p 5000:5000 flask-sample
           
         
